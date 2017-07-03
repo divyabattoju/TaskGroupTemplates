@@ -1,0 +1,263 @@
+{
+	"manifestVersion": 1,
+	"id": "rm-tg-extensions2",
+	"version": "0.1.0",
+	"name": "Sample Taskgroup1",
+	"description": "Adds more tg templates to RM",
+	"publisher": "ms-devlabs",
+	"public": true,
+	"targets": [{
+		"id": "Microsoft.VisualStudio.Services"
+	}],
+	"screenshots": [{
+		"path": "images/logo.png"
+	}],
+	"content": {
+		"details": {
+			"path": "README.md"
+		}
+	},
+	"icons": {
+		"default": "images\\azureicon.png"
+	},
+	"contributions": [{
+		"id": "sample-tgtemplate",
+		"type": "ms.vss-taskgroup.tg-template",
+		"targets": ["ms.vss-taskgroup.tg-templates"],
+		"properties": {
+			"values": [{
+				"tasks": [{
+					"displayName": "Task group: tg1 ",
+					"alwaysRun": true,
+					"continueOnError": true,
+					"enabled": true,
+					"timeoutInMinutes": 0,
+					"inputs": {
+						
+					},
+					"task": {
+						"id": "7f50a02a-40f4-41fb-af0a-7a320c3d295d",
+						"versionSpec": "1.*",
+						"definitionType": "metaTask"
+					}
+				},
+				{
+					"displayName": "Task group: tg2 ",
+					"alwaysRun": true,
+					"continueOnError": true,
+					"enabled": true,
+					"timeoutInMinutes": 0,
+					"inputs": {
+						
+					},
+					"task": {
+						"id": "433886aa-c2ac-4b9f-8994-3967eedaa8d6",
+						"versionSpec": "1.*",
+						"definitionType": "metaTask"
+					}
+				}],
+				"visibility": ["Build",
+				"Release"],
+				"runsOn": ["Agent",
+				"DeploymentGroup"],
+				"owner": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+				"revision": 1,
+				"createdBy": {
+					"id": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+					"displayName": "Divya Bathoju",
+					"uniqueName": "FAREAST\\dibathoj"
+				},
+				"createdOn": "2017-06-28T09:32:14.807Z",
+				"modifiedBy": {
+					"id": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+					"displayName": "Divya Bathoju",
+					"uniqueName": "FAREAST\\dibathoj"
+				},
+				"modifiedOn": "2017-06-28T09:32:14.807Z",
+				"fromExtension": false,
+				"id": "a9a84251-325d-4abb-a9d6-098746c104b9",
+				"name": "tg3",
+				"version": {
+					"major": 1,
+					"minor": 0,
+					"patch": 0,
+					"isTest": false
+				},
+				"serverOwned": false,
+				"contentsUploaded": true,
+				"iconUrl": "/tfs/_static/tfs/Dev16.M120/_content/icon-meta-task.png",
+				"hostType": null,
+				"packageType": "",
+				"packageLocation": "",
+				"sourceLocation": "",
+				"minimumAgentVersion": "*",
+				"friendlyName": "tg3",
+				"description": "",
+				"category": "Deploy",
+				"helpMarkDown": "",
+				"definitionType": "metaTask",
+				"author": "Divya Bathoju",
+				"demands": [],
+				"groups": [],
+				"inputs": [],
+				"satisfies": [],
+				"sourceDefinitions": [],
+				"dataSourceBindings": [],
+				"instanceNameFormat": "Task group: tg3 ",
+				"execution": {
+					
+				}
+			},
+			{
+				"tasks": [{
+					"displayName": "PowerShell Script",
+					"alwaysRun": false,
+					"continueOnError": false,
+					"enabled": true,
+					"timeoutInMinutes": 0,
+					"inputs": {
+						"scriptType": "inlineScript",
+						"scriptName": "",
+						"arguments": "",
+						"inlineScript": "# You can write your powershell scripts inline here. \n# You can also pass predefined and custom variables to this scripts using arguments\n\n Write-Host \"Hello World\"",
+						"workingFolder": "",
+						"failOnStandardError": "true"
+					},
+					"task": {
+						"id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+						"versionSpec": "1.*",
+						"definitionType": "task"
+					}
+				}],
+				"visibility": ["Build",
+				"Release"],
+				"runsOn": ["Agent",
+				"DeploymentGroup"],
+				"owner": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+				"revision": 1,
+				"createdBy": {
+					"id": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+					"displayName": "Divya Bathoju",
+					"uniqueName": "FAREAST\\dibathoj"
+				},
+				"createdOn": "2017-06-28T09:31:18.35Z",
+				"modifiedBy": {
+					"id": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+					"displayName": "Divya Bathoju",
+					"uniqueName": "FAREAST\\dibathoj"
+				},
+				"modifiedOn": "2017-06-28T09:31:18.35Z",
+				"fromExtension": false,
+				"id": "7f50a02a-40f4-41fb-af0a-7a320c3d295d",
+				"name": "tg1",
+				"version": {
+					"major": 1,
+					"minor": 0,
+					"patch": 0,
+					"isTest": false
+				},
+				"serverOwned": false,
+				"contentsUploaded": true,
+				"iconUrl": "/tfs/_static/tfs/Dev16.M120/_content/icon-meta-task.png",
+				"hostType": null,
+				"packageType": "",
+				"packageLocation": "",
+				"sourceLocation": "",
+				"minimumAgentVersion": "*",
+				"friendlyName": "tg1",
+				"description": "",
+				"category": "Deploy",
+				"helpMarkDown": "",
+				"definitionType": "metaTask",
+				"author": "Divya Bathoju",
+				"demands": [],
+				"groups": [],
+				"inputs": [],
+				"satisfies": [],
+				"sourceDefinitions": [],
+				"dataSourceBindings": [],
+				"instanceNameFormat": "Task group: tg1 ",
+				"execution": {
+					
+				}
+			},
+			{
+				"tasks": [{
+					"displayName": "PowerShell Script",
+					"alwaysRun": false,
+					"continueOnError": false,
+					"enabled": true,
+					"timeoutInMinutes": 0,
+					"inputs": {
+						"scriptType": "inlineScript",
+						"scriptName": "",
+						"arguments": "",
+						"inlineScript": "# You can write your powershell scripts inline here. \n# You can also pass predefined and custom variables to this scripts using arguments\n\n Write-Host \"Hello World\"",
+						"workingFolder": "",
+						"failOnStandardError": "true"
+					},
+					"task": {
+						"id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+						"versionSpec": "1.*",
+						"definitionType": "task"
+					}
+				}],
+				"visibility": ["Build",
+				"Release"],
+				"runsOn": ["Agent",
+				"DeploymentGroup"],
+				"owner": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+				"revision": 1,
+				"createdBy": {
+					"id": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+					"displayName": "Divya Bathoju",
+					"uniqueName": "FAREAST\\dibathoj"
+				},
+				"createdOn": "2017-06-28T09:31:57.31Z",
+				"modifiedBy": {
+					"id": "a19dd852-992e-42df-83e6-93f3ddec10e7",
+					"displayName": "Divya Bathoju",
+					"uniqueName": "FAREAST\\dibathoj"
+				},
+				"modifiedOn": "2017-06-28T09:31:57.31Z",
+				"fromExtension": false,
+				"id": "433886aa-c2ac-4b9f-8994-3967eedaa8d6",
+				"name": "tg2",
+				"version": {
+					"major": 1,
+					"minor": 0,
+					"patch": 0,
+					"isTest": false
+				},
+				"serverOwned": false,
+				"contentsUploaded": true,
+				"iconUrl": "/tfs/_static/tfs/Dev16.M120/_content/icon-meta-task.png",
+				"hostType": null,
+				"packageType": "",
+				"packageLocation": "",
+				"sourceLocation": "",
+				"minimumAgentVersion": "*",
+				"friendlyName": "tg2",
+				"description": "",
+				"category": "Deploy",
+				"helpMarkDown": "",
+				"definitionType": "metaTask",
+				"author": "Divya Bathoju",
+				"demands": [],
+				"groups": [],
+				"inputs": [],
+				"satisfies": [],
+				"sourceDefinitions": [],
+				"dataSourceBindings": [],
+				"instanceNameFormat": "Task group: tg2 ",
+				"execution": {
+					
+				}
+			}]
+		}
+	}],
+	"files": [{
+		"path": "images\\azureicon.png",
+		"addressable": true
+	}]
+}
