@@ -30,9 +30,7 @@ vss-extension.json skeleton
 		"targets": ["ms.vss-taskgroup.tg-templates"],
 		"properties": {
 			"values": [{
-				"tasks": [{
-                   /* List of Task Groups */
-                 }]
+				"tasks": [{  }]  // List of Task Groups (incase of nested, makesure the child task group is listed here)
                 }]
         }
   }]
